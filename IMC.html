@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .baixo {
+            background-color: #00FF00; 
+        }
+        .normal {
+            background-color: #FFFF00; 
+        }
+        .alto {
+            background-color: #FFA500; 
+        }
+        .muito-alto {
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <form>
+        <label for="peso">Peso (kg):</label>
+        <input type="text" id="peso" name="peso"><br><br>
+
+        <label for="altura">Altura (m):</label>
+        <input type="text" id="altura" name="altura"><br><br>
+
+        <label for="imc">IMC:</label>
+        <input type="text" id="imc" name="imc" disabled><br><br>
+
+        <p>Classificação: <span id="classificacao"></span></p>
+
+        <input type="button" value="Calcular" onclick="calcularIMC()">
+        <input type="button" value="Limpar Formulário" onclick="limparFormulario()">
+    </form>
+</body>
+</html>
