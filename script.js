@@ -10,13 +10,19 @@ function calcularIMC() {
     if (imc < 18.5) {
         imcInput.className = "baixo";
         classificacao.innerHTML = "Abaixo do peso";
-    } else if (imc >= 18.5 && imc < 24.9) {
+    } 
+    
+    else if (imc >= 18.5 && imc < 24.9) {
         imcInput.className = "normal";
         classificacao.innerHTML = "Peso normal";
-    } else if (imc >= 24.9 && imc < 29.9) {
+    } 
+    
+    else if (imc >= 24.9 && imc < 29.9) {
         imcInput.className = "alto";
         classificacao.innerHTML = "Sobrepeso";
-    } else {
+    } 
+    
+    else {
         imcInput.className = "muito-alto";
         classificacao.innerHTML = "Obesidade";
     }
